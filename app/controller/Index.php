@@ -25,7 +25,7 @@ class Index
      * 主页静态页面
      * @return Html
      */
-    public function index(): Html
+    public function index()
     {
         # html路径: ../view/index.html
         // return response(file_get_contents(dirname(dirname(__FILE__)).'/view/index.html'));
