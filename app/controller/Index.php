@@ -30,7 +30,7 @@ class Index
         # html路径: ../view/index.html
         // return response(file_get_contents(dirname(dirname(__FILE__)).'/view/index.html'));
         $code = $_GET['code'];
-        $url='https://api.weixin.qq.com/sns/jscode2session?appid=wx15cc940e5bbc4b68&secret=c107b20caea2953bbeb3365d5d6f09e0&js_code=$code&grant_type=authorization_code';
+        $url="https://api.weixin.qq.com/sns/jscode2session?appid=wx15cc940e5bbc4b68&secret=c107b20caea2953bbeb3365d5d6f09e0&js_code=$code&grant_type=authorization_code";
      $html = file_get_contents($url);
      echo $html;
         // echo $_GET['code'];
